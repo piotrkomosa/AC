@@ -3,10 +3,11 @@ package Exercise_1;
 public class RoomTest {
     public static void main(String[] args) {
 
-        Room room1= new Room(25,30,true);
-        room1.setBorderTemp(22);
-        System.out.println("W pokoju z klimatyzatorem temperatura wynosi: " + room1.currentTemp + " , po wlączeniu klimy spada do " + (room1.currentTemp-1) );
-
+        Room room1 = new Room(25, 23, true, 22);
+        room1.tempCheck();
+        room1.desc();
+        System.out.println(room1.desc() + room1.tempCheck());
+        Room room2 = new Room(25, 20, true, 22);
+        System.out.println(room2.desc() + room2.tempCheck());
     }
-
 }
