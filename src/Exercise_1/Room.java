@@ -37,11 +37,11 @@ public class Room {
     public void setBorderTemp(int borderTemp) {
         this.borderTemp = borderTemp;
     }
-    int tempCheck() {
+    String tempCheck() {
         if (unitAC && currentTemp > borderTemp) {
-            return currentTemp - 1;
+            return currentTemp - 1 + "true";
         } else {
-            return currentTemp;
+            return "false";
         }
     }
     String desc() {
