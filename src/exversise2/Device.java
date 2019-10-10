@@ -19,9 +19,6 @@ public class Device {
     String getInfo() {
         return "Kod: " + code + " producent: " + producer + " typ: " + type + " cena: " + price;
     }
-    String allDevices() {
-        return getInfo() + "\n";
-    }
 }
 
 
