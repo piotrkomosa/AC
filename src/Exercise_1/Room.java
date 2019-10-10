@@ -9,7 +9,8 @@ public class Room {
     public Room(int temp, int currentTemp, boolean unitAC, int borderTemp) {
         this.currentTemp = currentTemp;
         this.unitAC = unitAC;
-        this.borderTemp = borderTemp; }
+        this.borderTemp = borderTemp;
+    }
     public int getCurrentTemp() {
         return currentTemp;
     }
@@ -28,15 +29,15 @@ public class Room {
     public void setBorderTemp(int borderTemp) {
         this.borderTemp = borderTemp;
     }
-
     boolean tempCheck() {
-        if ((unitAC)&&(currentTemp>borderTemp)) {
-            setCurrentTemp(getCurrentTemp()-1);return true;
+        if ((unitAC) && (currentTemp > borderTemp)) {
+            setCurrentTemp(getCurrentTemp() - 1);
+            return true;
         } else {
             return false;
         }
     }
-    String desc() {
+   String desc() {
         return " W pokoju z klimatyzacją jest temperatura " + +currentTemp + " i zmienia się na ";
     }
 }
