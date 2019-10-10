@@ -2,23 +2,14 @@ package Exercise_1;
 
 public class Room {
 
-    private int area;
     private int currentTemp;
     private boolean unitAC;
     private int borderTemp;
 
-    public Room(int area, int currentTemp, boolean unitAC, int borderTemp) {
-        this.area = area;
+    public Room(int temp, int currentTemp, boolean unitAC, int borderTemp) {
         this.currentTemp = currentTemp;
         this.unitAC = unitAC;
-        this.borderTemp = borderTemp;
-    }
-    public int getArea() {
-        return area;
-    }
-    public void setArea(int area) {
-        this.area = area;
-    }
+        this.borderTemp = borderTemp; }
     public int getCurrentTemp() {
         return currentTemp;
     }
@@ -37,11 +28,12 @@ public class Room {
     public void setBorderTemp(int borderTemp) {
         this.borderTemp = borderTemp;
     }
-    String tempCheck() {
-        if (unitAC && currentTemp > borderTemp) {
-            return currentTemp - 1 + "true";
+
+    boolean tempCheck() {
+        if ((unitAC)&&(currentTemp>borderTemp)) {
+            setCurrentTemp(getCurrentTemp()-1);return true;
         } else {
-            return "false";
+            return false;
         }
     }
     String desc() {

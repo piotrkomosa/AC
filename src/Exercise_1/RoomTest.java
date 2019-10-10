@@ -2,8 +2,7 @@ package Exercise_1;
 
 public class RoomTest {
     public static void main(String[] args) {
-
-        Room room1 = new Room(25, 23, true, 22);
+        Room room1 = new Room(25, 25, false, 22);
         room1.tempCheck();
         room1.desc();
         System.out.println(room1.desc() + room1.tempCheck());
