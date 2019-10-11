@@ -2,73 +2,52 @@ package excersise3;
 
 public class Point {
 
-    private int x;
-    private int y;
+    private int x1;
+    private int y1;
+    private int x2;
+    private int y2;
+    private int x3;
+    private int y3;
 
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Point(int x1, int y1) {
     }
+
     public int getX() {
-        return x;
+        return x1;
     }
+
     public void setX(int x) {
-        this.x = x;
+        this.x1 = x1;
     }
+
     public int getY() {
-        return y;
+        return y1;
     }
+
     public void setY(int y) {
-        this.y = y;
+        this.y1 = y1;
     }
+
     public boolean quater1() {
-        if (x > 0 && y > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (x1 > 0 && y1 > 0);
     }
     public boolean quater2() {
-        if (x < 0 && y > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (x1 < 0 && y1 > 0);
     }
     public boolean quater3() {
-        if (x < 0 && y < 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (x1 < 0 && y1 < 0);
     }
     public boolean quater4() {
-        if (x > 0 && y < 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (x1 > 0 && y1 < 0);
     }
     public boolean lineX() {
-        if (x == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (x1 == 0);
     }
     public boolean lineY() {
-        if (y == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (y1 == 0);
     }
     public boolean middle() {
-        if (x == 0 && y == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (x1 == 0 && y1 == 0);
     }
 }
 
